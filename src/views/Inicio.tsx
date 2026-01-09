@@ -1,6 +1,10 @@
 import { ArrowRight, Globe, Award, Lightbulb, Users } from 'lucide-react';
 import Carousel from '../components/Carousel';
 import { useRouter } from '../context/useRouter';
+import img1 from "../assets/11.jpg";
+import img2 from "../assets/22.jpg";
+import img3 from "../assets/33.jpg";
+import img4 from "../assets/44.jpg";
 
 export default function Inicio() {
   const { navigate } = useRouter();
@@ -28,40 +32,21 @@ export default function Inicio() {
     }
   ];
 
+  const carouselImages = [img1, img2, img3, img4];
+
   return (
     <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">
-      <div className="h-150 relative">
+      <div className="relative">
         <Carousel autoPlay interval={4000}>
-          <div className="relative h-full bg-linear-to-br from-[#8a2890] to-[#2e3182] flex items-center justify-center">
-            <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg')] bg-cover bg-center opacity-20" />
-            <div className="relative z-10 text-center text-white px-6 max-w-4xl">
-              <h2 className="text-5xl font-bold mb-4">Transformando Ideas en Impacto</h2>
-              <p className="text-xl text-gray-200">La mayor competencia de emprendimiento social del mundo llega a UPN Lima</p>
+          {carouselImages.map((img, idx) => (
+            <div
+              key={idx}
+              className="relative min-h-55 md:min-h-90 lg:min-h-130 bg-linear-to-br from-[#8a2890] to-[#2e3182] flex items-center justify-center overflow-hidden"
+            >
+              <img src={img} alt={`slide-${idx}`} className="w-full h-full object-cover block" />
+              <div className="absolute inset-0 bg-gradient-to-br from-black/10 to-black/10" />
             </div>
-          </div>
-
-          <div className="relative h-full bg-linear-to-br from-[#12b1e7] to-[#2e3182] flex items-center justify-center">
-            <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg')] bg-cover bg-center opacity-20" />
-            <div className="relative z-10 text-center text-white px-6 max-w-4xl">
-              <h2 className="text-5xl font-bold mb-4">Innovación con Propósito</h2>
-              <p className="text-xl text-gray-200">Únete a una comunidad de estudiantes comprometidos con el cambio social</p>
-            </div>
-          </div>
-
-          <div className="relative h-full bg-linear-to-br from-[#ec2088] to-[#8a2890] flex items-center justify-center">
-            <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg')] bg-cover bg-center opacity-20" />
-            <div className="relative z-10 text-center text-white px-6 max-w-4xl">
-              <h2 className="text-5xl font-bold mb-4">Primera Edición en UPN Lima</h2>
-              <p className="text-xl text-gray-200">Sé parte de la historia y construye soluciones que importen</p>
-            </div>
-          </div>
-          <div className="relative h-full bg-linear-to-br from-[#8a2890] to-[#2e3182] flex items-center justify-center">
-            <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg')] bg-cover bg-center opacity-20" />
-            <div className="relative z-10 text-center text-white px-6 max-w-4xl">
-              <h2 className="text-5xl font-bold mb-4">Transformando Ideas en Impacto</h2>
-              <p className="text-xl text-gray-200">La mayor competencia de emprendimiento social del mundo llega a UPN Lima</p>
-            </div>
-          </div>
+          ))}
         </Carousel>
       </div>
 

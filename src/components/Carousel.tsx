@@ -28,14 +28,14 @@ export default function Carousel({ children, autoPlay = false, interval = 5000 }
   }
 
   return (
-    <div className="relative w-full h-full group">
-      <div className="overflow-hidden h-full">
+    <div className="relative w-full group">
+      <div className="overflow-hidden">
         <div
-          className="flex transition-transform duration-500 ease-out h-full"
+          className="flex transition-transform duration-500 ease-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {children.map((child, index) => (
-            <div key={index} className="min-w-full h-full">
+            <div key={index} className="min-w-full">
               {child}
             </div>
           ))}
