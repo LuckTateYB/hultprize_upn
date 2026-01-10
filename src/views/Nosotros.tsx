@@ -230,10 +230,10 @@ export default function Nosotros() {
             <div>
               <h3 className="text-3xl font-bold text-white mb-4">Nuestra Historia</h3>
               <p className="text-lg text-white leading-relaxed mb-4">
-                En 2025, un grupo de estudiantes de la Universidad Privada del Norte – sede Lima, decidió asumir un reto ambicioso: traer a la universidad el programa de emprendimiento social más grande del mundo, Hult Prize.
-                Impulsados por la convicción de que las ideas jóvenes pueden transformar realidades, nació Hult Prize at UPN Lima como una comunidad que conecta a estudiantes de distintas disciplinas con un propósito común: crear soluciones innovadoras con impacto social real.
-                Desde entonces, estamos construyendo una plataforma que fomenta el liderazgo, la colaboración y la acción. Un espacio donde las ideas audaces se convierten en proyectos, y los estudiantes descubren su potencial como agentes de cambio capaces de generar impacto local y global.
-                Este no es solo un programa. Es un punto de partida para quienes creen que emprender también es transformar el mundo. 🌍🚀
+                Fundada a finales de 2025, la comunidad Hult Prize at UPN Lima llega para liderar
+                la edición 2026 del programa de emprendimiento social más grande del mundo. 
+                Conectamos estudiantes de diversas facultades para transformar ideas audaces en soluciones
+                con impacto real, fomentando el liderazgo y la innovación desde nuestra sede. 🌍🚀
               </p>
             </div>
           </div>

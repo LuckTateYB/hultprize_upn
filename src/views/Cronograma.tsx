@@ -158,10 +158,10 @@ export default function Cronograma() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="py-20 bg-gradient-to-b from-[#2e3182] via-[#8a2890] to-[#12b1e7] text-white">
+      <section className="py-20 bg-linear-to-br from-[#8a2890] via-[#2E3182] to-[#8a2890] text-white">
         <div className="container mx-auto px-6 text-center">
           <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-6 animate-slide-up">
-            <span className="text-[#12b1e7]">Cronograma</span> 2025
+            <span className="text-[#12b1e7]">Cronograma</span> 2026
           </h1>
           <p className="text-xl text-white/80 max-w-2xl mx-auto animate-fade-in">
             Descubre todos los eventos y actividades que tenemos preparados
@@ -170,10 +170,10 @@ export default function Cronograma() {
       </section>
 
       {/* Timeline Section (updated structure) */}
-      <section className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+      <section className="py-20 bg-linear-to-b from-white to-gray-50 relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
-            <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-[#8a2890] via-[#12b1e7] to-[#ec2088] transform -translate-x-1/2 hidden md:block"></div>
+            <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-linear-to-b from-[#8a2890] via-[#12b1e7] to-[#ec2088] transform -translate-x-1/2 hidden md:block"></div>
 
             {timelineEvents.map((event, index) => {
               const isLeft = index % 2 === 0;

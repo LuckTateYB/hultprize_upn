@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { ReactNode} from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -23,9 +23,11 @@ export default function Carousel({ children, autoPlay = false, interval = 5000 }
     setCurrentIndex(index);
   };
 
-  if (autoPlay) {
-    setTimeout(goToNext, interval);
-  }
+  useEffect(() => {
+    if (!autoPlay) return;
+    const id = setInterval(goToNext, interval);
+    return () => clearInterval(id);
+  }, [autoPlay, interval]);
 
   return (
     <div className="relative w-full group">

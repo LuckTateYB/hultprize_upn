@@ -5,7 +5,7 @@ import { SiTiktok, SiWhatsapp } from "react-icons/si";
 const socialLinks = [
   { icon: Linkedin, href: "https://www.linkedin.com/company/hult-prize-at-upn-lima/posts/?feedView=all", label: "LinkedIn" },
   { icon: Instagram, href: "https://www.instagram.com/hultprizeupn/", label: "Instagram" },
-  { icon: Youtube, href: "https://youtube.com", label: "YouTube" },
+  { icon: Youtube, href: "https://www.youtube.com/@HultPrizeUPNLIMA", label: "YouTube" },
     { icon: SiTiktok, href: "https://tiktok.com", label: "TikTok" },
   { icon: SiWhatsapp, href: "https://chat.whatsapp.com/IGkzVgCKm8Y1jTLbRxcnmH", label: "WhatsApp" },
 ];

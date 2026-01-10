@@ -37,7 +37,7 @@ export default function Inicio() {
   return (
     <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">
       <div className="relative">
-        <Carousel autoPlay interval={4000}>
+        <Carousel autoPlay interval={10000}>
           {carouselImages.map((img, idx) => (
             <div
               key={idx}

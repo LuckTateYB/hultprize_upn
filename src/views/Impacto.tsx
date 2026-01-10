@@ -31,10 +31,10 @@ export default function Impacto() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
-      <section className="bg-linear-to-br from-[#8a2890] to-[#2e3182] py-20 px-8 text-white">
+      <section className="bg-linear-to-br from-[#8a2890] via-[#2E3182] to-[#12B1E7] py-20 px-8 text-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl mb-6">Nuestro Impacto</h1>
-          <p className="text-xl text-[#12b1e7] max-w-3xl mx-auto">
+          <h1 className="text-5xl font-bold mb-6">Nuestro Impacto</h1>
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Somos una comunidad nueva con grandes aspiraciones. Conoce nuestra finalidad, 
             alcance y proyección en el mundo del emprendimiento social
           </p>

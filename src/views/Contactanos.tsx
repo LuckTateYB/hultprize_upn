@@ -1,6 +1,8 @@
-import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin, HandHeart, Users, HelpCircle } from "lucide-react";
+import { Mail, MapPin, Instagram, Youtube, Linkedin, HandHeart, Users, HelpCircle } from "lucide-react";
 import { motion } from "framer-motion";
-import imgParticipar from '../assets/participar.png';
+import imgParticipar from '../assets/groupHult.png';
+import imgAlone from '../assets/soloHult.png';
+import mentor from '../assets/mentorHult.png';
 
 
 
@@ -10,21 +12,24 @@ export default function Contactanos() {
   const contactReasons = [
   {
     icon: <Users size={24} />,
-    title: "Participar",
+    title: "¿Ya tienes equipo?",
     description: "Únete a la competencia y presenta tu idea de emprendimiento social.",
     image: imgParticipar,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSekiQZdRFqzMNMU2X2AocQ4pwMR7QUN63OefeJBKJZH-Zj3Yw/viewform",
   },
   {
     icon: <HandHeart size={24} />,
-    title: "Voluntariado",
-    description: "Sé parte del equipo organizador y apoya en la realización de eventos.",
-    image: imgParticipar,
+    title: "¿Estás buscando equipo?",
+    description: "Encuentra compañeros con ideas afines y forma un equipo ganador",
+    image: imgAlone,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSew2Ik0YRJPPTcZZCupMC3SO8J4Gu8AiQTzeH7ZI9Aq9WY-iA/viewform",
   },
-  {
+    {
     icon: <HelpCircle size={24} />,
-    title: "Consultas",
-    description: "Resuelve cualquier duda sobre Hult Prize o nuestra comunidad.",
-    image: imgParticipar,
+    title: "¿Quieres ser mentor?",
+    description: "Comparte tu experiencia y guía a los equipos en su camino al éxito.",
+    image: mentor,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSd-_2j0-pLGu_FNUAGj5kXpZYosrUbhPsqI9UncdCd1Bbg0eQ/viewform?usp=sharing&ouid=106138350658751548488",
   },
 ];
 
@@ -34,12 +39,6 @@ export default function Contactanos() {
       label: "Email",
       value: "hultprize@upn.edu.pe",
       link: "mailto:hultprize@upn.edu.pe"
-    },
-    {
-      icon: Phone,
-      label: "Teléfono",
-      value: "+51 999 999 999",
-      link: "tel:+51999999999"
     },
     {
       icon: MapPin,
@@ -54,21 +53,21 @@ export default function Contactanos() {
       icon: Instagram,
       name: "Instagram",
       handle: "@hultprizeupnlima",
-      link: "#",
+      link: "https://www.instagram.com/hultprizeupn/",
       color: "#ec2088"
     },
     {
-      icon: Facebook,
-      name: "Facebook",
-      handle: "Hult Prize UPN Lima",
-      link: "#",
-      color: "#12b1e7"
+      icon: Youtube,
+      name: "YouTube",
+      handle: "Hult Prize UPN LIMA",
+      link: "https://www.youtube.com/@HultPrizeUPNLIMA",
+      color: "#ff0000"
     },
     {
       icon: Linkedin,
       name: "LinkedIn",
       handle: "Hult Prize UPN Lima",
-      link: "#",
+      link: "https://www.linkedin.com/company/hult-prize-at-upn-lima/posts/?feedView=all",
       color: "#2e3182"
     }
   ];
@@ -76,10 +75,10 @@ export default function Contactanos() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
-      <section className="bg-linear-to-br from-[#8a2890] to-[#2e3182] py-20 px-8 text-white">
+      <section className="bg-linear-to-br from-[#12B1E7] via-[#2E3182] to-[#8a2890] py-20 px-8 text-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">Únete al Movimiento</h2>
-          <p className="text-xl text-[#12b1e7] max-w-3xl mx-auto">
+          <h2 className="text-5xl font-bold mb-4">Únete al Movimiento</h2>
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Estamos construyendo algo único en UPN Lima. Si tienes pasión por el emprendimiento social,
             quieres desarrollar tus habilidades de liderazgo y deseas ser parte de un movimiento global
             que busca cambiar el mundo, este es tu lugar.
@@ -97,15 +96,18 @@ export default function Contactanos() {
             className="grid grid-cols-1 gap-6 max-w-3xl mx-auto mb-16"
           >
             {contactReasons.map((reason, index) => (
-              <motion.div
+              <motion.a
                 key={index}
+                href={reason.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 + index * 0.08 }}
                 whileHover={{ y: -5, scale: 1.01 }}
-                className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all flex items-start gap-4"
+                className="no-underline bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all flex items-start gap-4"
               >
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#8a2890] to-[#ec2088] flex items-center justify-center text-white flex-shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-linear-to-br from-[#8a2890] to-[#ec2088] flex items-center justify-center text-white shrink-0">
                   {reason.icon}
                 </div>
                 <div className="flex-1">
@@ -113,7 +115,7 @@ export default function Contactanos() {
                   <p className="text-sm text-gray-600">{reason.description}</p>
                   <img src={reason.image} alt={reason.title} className="mt-4 rounded-lg shadow-sm" />
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </motion.div>
 
@@ -175,10 +177,6 @@ export default function Contactanos() {
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-[#12b1e7] mt-2"></div>
                   <span><strong>Estudiantes:</strong> Únete a la competencia y forma tu equipo</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-[#ec2088] mt-2"></div>
-                  <span><strong>Voluntarios:</strong> Ayúdanos a organizar eventos y talleres</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-[#12b1e7] mt-2"></div>
