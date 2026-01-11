@@ -1,10 +1,10 @@
 import { ArrowRight, Globe, Award, Lightbulb, Users } from 'lucide-react';
 import Carousel from '../components/Carousel';
 import { useRouter } from '../context/useRouter';
-import img1 from "../assets/11.jpg";
-import img2 from "../assets/22.jpg";
-import img3 from "../assets/33.jpg";
-import img4 from "../assets/44.jpg";
+import img1 from "../assets/11.webp";
+import img2 from "../assets/22.webp";
+import img3 from "../assets/33.webp";
+import img4 from "../assets/44.webp";
 
 export default function Inicio() {
   const { navigate } = useRouter();

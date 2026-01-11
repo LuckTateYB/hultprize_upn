@@ -1,15 +1,15 @@
 import { useState, useRef, useEffect } from 'react';
 import { Linkedin, Target, Eye, Flag, BookOpen } from 'lucide-react';
 import type { Leader } from '../types';
-import Yoder from '../assets/Miguel.jpg'
-import OscarCastro from '../assets/Oscar Castro.jpeg'
-import Gina from "../assets/Gina Janampa - Deputy Campus.jpeg";
-import Valery from "../assets/Valery Yataco Solis.jpg";
-import Jeniffer from "../assets/Jeniffer Paniora.jpeg";
-import Anggela from "../assets/Anggela Huapaya - Head of Experts and Judges Support Team.jpeg";
-import Joselin from "../assets/Joselin Brigitte Rodriguez Ruiz.png";
-import Fernanda from "../assets/Fernanda.jpg";
-import Jorge from "../assets/Jorge.png";
+import Yoder from '../assets/Miguel.webp'
+import OscarCastro from '../assets/Oscar Castro.webp'
+import Gina from "../assets/Gina Janampa - Deputy Campus.webp";
+import Valery from "../assets/Valery Yataco Solis.webp";
+import Jeniffer from "../assets/Jeniffer Paniora.webp";
+import Anggela from "../assets/Anggela Huapaya - Head of Experts and Judges Support Team.webp";
+import Joselin from "../assets/Joselin Brigitte Rodriguez Ruiz.webp";
+import Fernanda from "../assets/Fernanda.webp";
+import Jorge from "../assets/Jorge.webp";
 
 
 const leaders: Leader[] = [
