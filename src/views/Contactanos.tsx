@@ -37,14 +37,14 @@ export default function Contactanos() {
     {
       icon: Mail,
       label: "Email",
-      value: "hultprize@upn.edu.pe",
-      link: "mailto:hultprize@upn.edu.pe"
+      value: "upnlimahultprize@gmail.com",
+      link: "mailto:upnlimahultprize@gmail.com"
     },
     {
       icon: MapPin,
       label: "Ubicación",
       value: "Universidad Privada del Norte, Lima",
-      link: "#"
+      link: "https://maps.app.goo.gl/SKiZehp2P9qRqar2A"
     }
   ];
 
