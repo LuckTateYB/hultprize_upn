@@ -2,12 +2,11 @@ import { Target, MapPin, Globe, Users, TrendingUp, Award, Heart } from "lucide-r
 
 export default function Impacto() {
   const nationalPresence = [
-    "PUCP - Lima",
-    "UNMSM - Lima",
-    "UPC - Lima",
-    "UTEC - Lima",
-    "Universidad de Piura",
-    "UNSA - Arequipa"
+    "Universidad del Pacífico - Lima",
+    "UCSUR - Lima",
+    "UTP - Lima",
+    "Universidad de Lima",
+    "Universidad Nacional de Ingeniería",
   ];
 
   const internationalPresence = [
@@ -22,9 +21,9 @@ export default function Impacto() {
   ];
 
   const initialMetrics = [
-    { icon: Users, value: "50+", label: "Estudiantes interesados" },
+    { icon: Users, value: "100+", label: "Estudiantes interesados" },
     { icon: TrendingUp, value: "10+", label: "Equipos en formación" },
-    { icon: Award, value: "5", label: "Talleres planificados" },
+    { icon: Award, value: "20+", label: "Talleres planificados" },
     { icon: Heart, value: "100%", label: "Compromiso e ilusión" }
   ];
 
