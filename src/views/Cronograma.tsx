@@ -32,24 +32,26 @@ const timelineEvents: TimelineEvent[] = [
     color: '#8a2890',
     speakers: ['Dra. María González', 'Prof. Carlos Mendoza', 'Lic. Ana Ruiz'],
     schedule: [
-      { time: '09:00', activity: 'Registro y bienvenida' },
-      { time: '10:00', activity: 'Conferencia magistral: El futuro de la educación' },
-      { time: '12:00', activity: 'Panel de expertos' },
-      { time: '14:00', activity: 'Talleres paralelos' },
-      { time: '16:00', activity: 'Networking y cierre' },
+      { time: '09:00 - 9:30', activity: 'Registro y bienvenida' },
+      { time: '09:35 - 10:00', activity: 'Dinámica: “Aqui estamos"' },
+      { time: '10:00 - 11:10', activity: 'Taller "Innovación social y oportunidades de negocio"' },
+      { time: '11:10 - 11:30', activity: 'Break' },
+      { time: '11:30 - 12:10', activity: 'Bases del lanzamiento Hult Prize' },
+      { time: '12:10 - 12:40', activity: 'MatchMaking' },
+      { time: '12:45 - 13:00', activity: 'Cierre' },
     ],
     virtualEvents: [
-      { id: '1a', title: 'Arquitectura de Procesos: Diseñando la Columna Vertebral de una Startup Social', time: '18:00', link: 'https://luma.com/5dvfqvlh' },
-      { id: '1b', title: 'Agile y Kanban para emprendimientos', time: '18:00', link: 'https://luma.com/u5bpgsyx' },
-      { id: '1c', title: 'Design Thinking & Lean Startup', time: '18:00', link: 'https://luma.com/nvc32j2a' },
-      { id: '1d', title: 'Impact English I – Problem & Solution', time: '18:00', link: 'https://luma.com/xxao8fwd' },
-      { id: '1e', title: 'Investigación de Mercados & Benchmarking', time: '18:00', link: 'https://luma.com/y7qizvdl' },
-      { id: '1f', title: 'Equipos de alto rendimiento', time: '18:00', link: 'https://luma.com/67qqa051' },
-      { id: '1g', title: 'Scrum para equipos ágiles', time: '18:00', link: 'https://luma.com/p3tje2x4' },
-      { id: '1h', title: 'TAM, SAM, SOM + Análisis de Mercado', time: '18:00', link: 'https://luma.com/3r6dqk3e' },
-      { id: '1i', title: 'Buyer Persona + CJM', time: '18:00', link: 'https://luma.com/5mf2hz0c' },
-      { id: '1j', title: 'No-Code & IA para MVP (Lovable, V0)', time: '18:00', link: 'https://luma.com/nj2fl35g' },
-      { id: '1k', title: 'Ventas & Gestión Comercial', time: '18:00', link: 'https://luma.com/674gdc25' },
+      { id: '1a', title: 'Arquitectura de Procesos: Diseñando la Columna Vertebral de una Startup Social', time: '26-01-2026 11AM', link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTU4OTkzM2YtYjg5Mi00MDI3LWIzZTktMjBlYzM0ZmU1YmJi%40thread.v2/0?context=%7b%22Tid%22%3a%2248ba00e0-002e-4cb0-b501-07385d34ec34%22%2c%22Oid%22%3a%22581829bf-b758-467c-8229-c3ff45367857%22%7d' },
+      { id: '1b', title: 'Agile y Kanban para emprendimientos', time: '26-01-2026 12PM', link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWE5MTM2ZDgtMThmMS00YTljLTlhNDMtNDYzOGJhOWRmZjhl%40thread.v2/0?context=%7b%22Tid%22%3a%2248ba00e0-002e-4cb0-b501-07385d34ec34%22%2c%22Oid%22%3a%22581829bf-b758-467c-8229-c3ff45367857%22%7d' },
+      { id: '1c', title: 'Design Thinking & Lean Startup', time: '27-01-2026 4PM', link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTU4OTkzM2YtYjg5Mi00MDI3LWIzZTktMjBlYzM0ZmU1YmJi%40thread.v2/0?context=%7b%22Tid%22%3a%2248ba00e0-002e-4cb0-b501-07385d34ec34%22%2c%22Oid%22%3a%22581829bf-b758-467c-8229-c3ff45367857%22%7d' },
+      { id: '1d', title: 'Impact English I – Problem & Solution', time: '28-01-2026 7PM', link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWNkNmE5NDctZmYwZC00NTRlLTkxYTQtMzViODI4NTExYmUz%40thread.v2/0?context=%7b%22Tid%22%3a%2248ba00e0-002e-4cb0-b501-07385d34ec34%22%2c%22Oid%22%3a%22581829bf-b758-467c-8229-c3ff45367857%22%7d' },
+      { id: '1e', title: 'Investigación de Mercados & Benchmarking', time: '29-01-2026 4:30PM', link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmJmMWZhYzQtM2I5Yy00YjViLTkyMmMtMWZkODRkOGE3ZDFl%40thread.v2/0?context=%7b%22Tid%22%3a%2248ba00e0-002e-4cb0-b501-07385d34ec34%22%2c%22Oid%22%3a%22581829bf-b758-467c-8229-c3ff45367857%22%7d' },
+      { id: '1f', title: 'Equipos de alto rendimiento', time: '29-01-2026 3PM', link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWNmMTRmMmItMzc5YS00NGIxLThmY2YtNzc5YjY0ZGI1NThi%40thread.v2/0?context=%7b%22Tid%22%3a%2248ba00e0-002e-4cb0-b501-07385d34ec34%22%2c%22Oid%22%3a%22581829bf-b758-467c-8229-c3ff45367857%22%7d' },
+      { id: '1g', title: 'Scrum para equipos ágiles', time: '30-01-2026', link: 'https://luma.com/p3tje2x4' },
+      { id: '1h', title: 'TAM, SAM, SOM + Análisis de Mercado', time: '30-01-2026 10AM', link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzQ4NTk2ZTgtMmQ0OC00YzdjLTk1N2QtNjI0MzM2ZDg4OTEz%40thread.v2/0?context=%7b%22Tid%22%3a%2248ba00e0-002e-4cb0-b501-07385d34ec34%22%2c%22Oid%22%3a%22581829bf-b758-467c-8229-c3ff45367857%22%7d' },
+      { id: '1i', title: 'Buyer Persona + CJM', time: '02-02-2026 9AM', link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzBhMTU2YTYtMDczYy00NjYwLTlmYjMtNTQ0MjE2N2VlYWU3%40thread.v2/0?context=%7b%22Tid%22%3a%2248ba00e0-002e-4cb0-b501-07385d34ec34%22%2c%22Oid%22%3a%22581829bf-b758-467c-8229-c3ff45367857%22%7d' },
+      { id: '1j', title: 'No-Code & IA para MVP (Lovable, V0)', time: '03-02-2026 4PM', link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_ODgyZTQwMWQtMDVkOS00YjE5LThhMWUtZWQzMGZhMjg4YTcz%40thread.v2/0?context=%7b%22Tid%22%3a%2248ba00e0-002e-4cb0-b501-07385d34ec34%22%2c%22Oid%22%3a%22581829bf-b758-467c-8229-c3ff45367857%22%7d' },
+      { id: '1k', title: 'Ventas & Gestión Comercial', time: '04-02-2026', link: 'https://luma.com/674gdc25' },
 
     ],
   },
@@ -68,11 +70,11 @@ const timelineEvents: TimelineEvent[] = [
       { time: '15:00', activity: 'Taller práctico: Gestión de proyectos' },
     ],
     virtualEvents: [
-      { id: '2a', title: 'Personal branding en startups', time: '17:00', link: 'https://luma.com/6ccg1iem' },
-      { id: '2b', title: 'Finanzas Básicas para Startups', time: '17:00', link: 'https://luma.com/jyx1kp1z' },
-      { id: '2c', title: 'Elevator Pitch', time: '17:00', link: 'https://luma.com/x3e3wihk' },
-      { id: '2d', title: 'Go-To-Market & Growth Strategy', time: '17:00', link: 'https://luma.com/so5vm785' },
-      { id: '2e', title: 'Impact English III – Full Pitch Revision + Q&A', time: '17:00', link: 'https://luma.com/t5szf5mh' },
+      { id: '2a', title: 'Personal branding en startups', time: '06-02-2026 7PM', link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTIwNmM2ZTYtNDlmMy00NDY2LWFiYTYtZjU0MzljOTlkYmRm%40thread.v2/0?context=%7b%22Tid%22%3a%2248ba00e0-002e-4cb0-b501-07385d34ec34%22%2c%22Oid%22%3a%22003e0385-96f0-40d0-bfe4-8e3857d4f2d4%22%7d' },
+      { id: '2b', title: 'Finanzas Básicas para Startups', time: '09-02-2026 7:30PM', link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTcxMmY2NWUtOWEyZi00MTNkLWE1OTgtOWYzOTdmZmM2OTAz%40thread.v2/0?context=%7b%22Tid%22%3a%2248ba00e0-002e-4cb0-b501-07385d34ec34%22%2c%22Oid%22%3a%22003e0385-96f0-40d0-bfe4-8e3857d4f2d4%22%7d' },
+      { id: '2c', title: 'Elevator Pitch', time: '09-02-2026', link: 'https://luma.com/x3e3wihk' },
+      { id: '2d', title: 'Go-To-Market & Growth Strategy', time: '10-02-2026 10AM', link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_Nzg3ZGUzYjEtZDg1Mi00MjI3LWFjZWUtMzhjYWJjNTVhMTI2%40thread.v2/0?context=%7b%22Tid%22%3a%2248ba00e0-002e-4cb0-b501-07385d34ec34%22%2c%22Oid%22%3a%22003e0385-96f0-40d0-bfe4-8e3857d4f2d4%22%7d' },
+      { id: '2e', title: 'Impact English III – Full Pitch Revision + Q&A', time: '11-02-2026 3PM', link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzJlZjcyNTUtODgyOC00NDBmLTlmYzUtN2ZlMjMzNWUzYmFk%40thread.v2/0?context=%7b%22Tid%22%3a%2248ba00e0-002e-4cb0-b501-07385d34ec34%22%2c%22Oid%22%3a%22003e0385-96f0-40d0-bfe4-8e3857d4f2d4%22%7d' },
     ],
   },
   {
@@ -91,8 +93,8 @@ const timelineEvents: TimelineEvent[] = [
       { time: '17:00', activity: 'Premiación y cierre' },
     ],
     virtualEvents: [
-      { id: '3a', title: 'Business Model Canvas', time: '15:00', link: 'https://luma.com/1dkvsmsu' },
-      { id: '3b', title: 'Sostenibilidad y Economía Circular: Construyendo Modelos Responsables alineados a los ODS', time: '15:00', link: 'https://luma.com/lsuwnops' },
+      { id: '3a', title: 'Business Model Canvas', time: '13-02-2026', link: 'https://luma.com/1dkvsmsu' },
+      { id: '3b', title: 'Sostenibilidad y Economía Circular: Construyendo Modelos Responsables alineados a los ODS', time: '13-02-2026', link: 'https://luma.com/lsuwnops' },
     ],
   },
   {
@@ -121,11 +123,11 @@ const timelineEvents: TimelineEvent[] = [
     color: '#12b1e7',
     speakers: ['Ing. Pablo Herrera', 'Lic. Mariana Cortés'],
     schedule: [
-      { time: '18:00', activity: 'Presentación del reto' },
-      { time: '19:00', activity: 'Formación de equipos' },
-      { time: '20:00', activity: 'Inicio del hackathon' },
-      { time: '08:00 (Día 2)', activity: 'Mentorías express' },
-      { time: '18:00 (Día 2)', activity: 'Presentación de proyectos y premiación' },
+      { time: '10:00', activity: 'Presentación del reto' },
+      { time: '12:00', activity: 'Formación de equipos' },
+      { time: '14:00', activity: 'Inicio del hackathon' },
+      { time: '16:00', activity: 'Mentorías express' },
+      { time: '18:00', activity: 'Presentación de proyectos y premiación' },
     ],
     virtualEvents: [],
   },
@@ -138,11 +140,11 @@ const timelineEvents: TimelineEvent[] = [
     color: '#12b1e7',
     speakers: ['Ing. Pablo Herrera', 'Lic. Mariana Cortés'],
     schedule: [
-      { time: '18:00', activity: 'Presentación del reto' },
-      { time: '19:00', activity: 'Formación de equipos' },
-      { time: '20:00', activity: 'Inicio del hackathon' },
-      { time: '08:00 (Día 2)', activity: 'Mentorías express' },
-      { time: '18:00 (Día 2)', activity: 'Presentación de proyectos y premiación' },
+      { time: '10:00', activity: 'Presentación del reto' },
+      { time: '12:00', activity: 'Formación de equipos' },
+      { time: '14:00', activity: 'Inicio del hackathon' },
+      { time: '16:00', activity: 'Mentorías express' },
+      { time: '18:00', activity: 'Presentación de proyectos y premiación' },
     ],
     virtualEvents: [],
   },
@@ -281,7 +283,7 @@ export default function Cronograma() {
                     className="inline-flex items-center gap-2 px-4 py-2 bg-[#8a2890] text-white rounded-lg hover:bg-[#8a2890]/90 transition-colors duration-300"
                   >
                     <Link className="w-4 h-4" />
-                    Acceder al evento virtual
+                    Registrate al evento presencial
                   </a>
                 </div>
               )}

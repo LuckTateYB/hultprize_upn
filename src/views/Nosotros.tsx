@@ -48,7 +48,7 @@ const leaders: Leader[] = [
   {
     id: 5,
     name: 'Valery Yataco',
-    role: 'Co-coordinator of Marketing and Communications',
+    role: 'Sub-coordinator of Marketing and Communications',
     career: 'Administración y Marketing',
     image: Valery,
     linkedinUrl: 'https://www.linkedin.com/in/valery-nicolle-yataco-159287306/',
@@ -56,7 +56,7 @@ const leaders: Leader[] = [
   {
     id: 6,
     name: 'Jorge Huanaco',
-    role: 'Director de Tecnología',
+    role: 'Logistic Coordinator',
     career: 'Comunicación y Audiovisuales',
     image: Jorge,
     linkedinUrl: 'https://www.linkedin.com/in/jorge-huanaco/',
@@ -72,7 +72,7 @@ const leaders: Leader[] = [
   {
     id: 8,
     name: 'Joselin Rodriguez',
-    role: 'Partnerships and Collaborations',
+    role: 'Head of Partnerships and Collaborations',
     career: 'Ingeniería Industrial',
     image: Joselin,
     linkedinUrl: 'https://www.linkedin.com/in/joselin-brigitte-rodriguez-ruiz-07a092265/',
