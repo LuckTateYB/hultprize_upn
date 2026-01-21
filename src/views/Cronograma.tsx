@@ -30,7 +30,7 @@ const timelineEvents: TimelineEvent[] = [
     description: 'Innovación social y oportunidades de negocio',
     link: 'https://luma.com/icsgur3w',
     color: '#8a2890',
-    speakers: ['Dra. María González', 'Prof. Carlos Mendoza', 'Lic. Ana Ruiz'],
+    speakers: ['Angélica Pérez - Project Manager Inca Valley'],
     schedule: [
       { time: '09:00 - 9:30', activity: 'Registro y bienvenida' },
       { time: '09:35 - 10:00', activity: 'Dinámica: “Aqui estamos"' },
